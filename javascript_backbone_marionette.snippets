@@ -1,0 +1,80 @@
+#
+# Backbone.Marionette JS snippets
+#
+# http://marionettejs.com/
+#
+extends javascript
+
+snippet .ui "UI Property for Marionette View"
+/**
+ * Maps ui elements to avoid duplicating the selectors.
+ *
+ * @type {Object}
+ */
+ui: {
+  ${1:name}: '${2:selector}'$0
+},
+endsnippet
+
+snippet .modelEvents "ModelEvents Property for Marionette View"
+/**
+* Binds model events to functions.
+*
+* @type {Object}
+*/
+modelEvents: {
+  '${1:events}': '${2: methodName}'
+},
+endsnippet
+
+snippet .template "Template Property for Marionette View"
+/**
+ * The template used to render this layout.
+ *
+ * @type {Function}
+ */
+template: Template,
+endsnippet
+
+snippet .className "Classname Property for Marionette View"
+/**
+ * Class to append to the DOM element containing the layout.
+ *
+ * @type {String}
+ */
+className: '${1:className}',
+endsnippet
+
+snippet .initialize "Initialize Method for Marionette View"
+/**
+ * Initializes the view. $1
+ *
+ * @type {Function}
+ */
+initialize: function() {
+  $2
+},
+endsnippet
+
+snippet .onShow "onShow Method for Marionette View"
+/**
+ * Instantiates the views and assigns them to their regions. $1
+ *
+ * @type {Function}
+ */
+onShow: function() {
+  $2
+}
+endsnippet
+
+snippet .onRender "onRender Method for Marionette View"
+/**
+ * Triggered after the view has been rendered.$1
+ *
+ * @type {Function}
+ */
+onRender: function() {
+  $2
+}
+endsnippet
+
